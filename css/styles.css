@@ -1,6 +1,6 @@
  :root {
   --primary-color: #4a235a;
-  --secondary-color: #e0b354;
+  --secondary-color: #F9E79F;
   --dark-grey: #2b2b2b;
   --bigfont: 50px;
   --mediumfont: 25px;
@@ -153,6 +153,7 @@ a:active {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding-top: 40px;
 }
 
 
@@ -177,7 +178,6 @@ a:active {
   background-color: black;
 }
 
-
 * {
   box-sizing: border-box;
 }
@@ -199,7 +199,7 @@ a:active {
   }
 
   .grid__item {
-    background-color: lightgray;
+    background-color: #F9E79F;
     width: auto;
     min-height: auto;
     margin: 0;
