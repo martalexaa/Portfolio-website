@@ -97,9 +97,9 @@ a:active {
 .navigation-list__item {
   color: #4a235a;
   font-weight: bold;
-  -webkit-transition: 3s font-size, background-color;
-  -o-transition: 3s font-size, background-color;
-  transition: 3s font-size, background-color;
+  -webkit-transition: 3s background-color;
+  -o-transition: 3s background-color;
+  transition: 3s background-color;
   text-decoration: none !important;
   font-size: 25px;
 }
@@ -107,15 +107,14 @@ a:active {
 .navigation-list__item:hover {
   color: #4a235a;
   font-weight: bold;
-  font-size: 50px;
-  background-color: #e0b354;
+  background-color: #F9E79F;
 }
 
 .navigation-list__item--active {
   color: #4a235a;
   font-weight: bold;
   font-size: 25px;
-  background-color: #e0b354;
+  background-color: #F9E79F;
 }
 
 .button {
@@ -175,10 +174,11 @@ a:active {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  padding-top: 40px;
 }
 
 
-.profile, .about_main, .contact_main {
+.profile, .about_main, .contact_main, .work_main {
   display: block;
   max-width: 700px;
   margin: 0 auto;
@@ -195,14 +195,8 @@ a:active {
 
 
 .web {
-  color: #e0b354;
+  color: #F9E79F;
   background-color: black;
-}
-
-.work-title {
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 30px;
 }
 
 * {
@@ -254,7 +248,7 @@ a:active {
   }
 
   .grid__item {
-    background-color: lightgray;
+    background-color: #F9E79F;
     width: auto;
     min-height: auto;
     margin: 0;
@@ -400,4 +394,5 @@ h1 {
     font-size: 50px;
   }
 }
+
 
