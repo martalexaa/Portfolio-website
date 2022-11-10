@@ -1,5 +1,5 @@
  :root {
-  --primary-color: #4a235a;
+  --primary-color: #940591;
   --secondary-color: #F9E79F;
   --dark-grey: #2b2b2b;
   --bigfont: 50px;
@@ -11,8 +11,6 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 2;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 h1 {
   font-size: var(--bigfont);
@@ -56,15 +54,18 @@ a:active {
 .page-header {
   display: flex;
   width: 100%;
-  padding: 20px;
-  min-height: 100px;
+  height: 70px;
+  justify-content: space-between;
+  background-color: rgb(176, 175, 175);
+  padding: 10px;
 }
 
 
 .logo {
   object-fit: cover;
-  max-height: 70px;
-  width: 200px;
+  max-height: 50px;
+  max-width: 200px;
+  border-color: white;
 }
 
 .page-header__item {
@@ -120,9 +121,13 @@ a:active {
   border-radius: 3px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  box-shadow: -2px -3px 101px -16px rgba(0,0,0,0.35) inset;
   transition-duration: 3s;
   transition-property: opacity, background-color;
   font-size: 15px;
+  margin: 0;
+  left: 50%;
 }
 
 .button:hover,
@@ -131,13 +136,20 @@ a:active {
   cursor: pointer;
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
-  font-size: 15px;
   background-color: #e0b354;
-  padding: 10px;
   border-radius: 3px;
+  padding: 10px;
 }
 
-
+.message-form {
+  display: block;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  box-shadow: -2px -3px 120px -45px rgba(0,0,0,0.35);
+}
 
 .profile__portrait {
   float: left;
@@ -158,12 +170,17 @@ a:active {
   padding-bottom: 40px;
 }
 
+.media_link {
+ text-decoration: none !important;
+}
+
 
 .profile, .about_main, .contact_main, .work_main {
   display: block;
   max-width: 700px;
   margin: 0 auto;
-  text-align: center;
+  text-align: justify;
+  padding-top: 60px;
 }
 
 .work_main {
@@ -289,18 +306,18 @@ h1 {
   .grid {
     grid-template-columns: 1fr;
   }   
-}
 h1 {
-  font-size: 50px;
-}
+  font-size: 30px;
+}  
+}  
 
 @media all and (min-width: 500px) and (max-width: 750px){
   .grid {
     grid-template-columns: 1fr 1fr;
   }
-
   h1 {
-    font-size: 50px;
+    font-size: 30px;
   }
-} 
+}  
+
 

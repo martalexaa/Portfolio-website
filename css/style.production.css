@@ -9,20 +9,19 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 2;
-  padding: 50px;
 }
 h1 {
   font-size: 50px;
   font-weight: 700;
-  color: #4a235a;
+  color: #940591;
 }
 h2 {
   font-size: 25px;
   font-weight: 700;
-  color: #4a235a;
+  color: #940591;
 }
 a {
-  color: #4a235a;
+  color: #940591;
   padding: 5px 5px;
   -webkit-transition-duration: 3s;
        -o-transition-duration: 3s;
@@ -42,7 +41,7 @@ a:focus {
 
 a:visited {
   /* visited link */
-  color: #4a235a;
+  color: #940591;
   text-decoration: none;
   padding: 5px 5px;
   text-decoration: none;
@@ -59,16 +58,21 @@ a:active {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 20px;
-  min-height: 100px;
+  height: 70px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgb(176, 175, 175);
+  padding: 10px;
 }
 
 
 .logo {
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: 70px;
-  width: 200px;
+  max-height: 50px;
+  max-width: 200px;
+  border-color: white;
 }
 
 .page-header__item {
@@ -95,7 +99,7 @@ a:active {
 }
 
 .navigation-list__item {
-  color: #4a235a;
+  color: #940591;
   font-weight: bold;
   -webkit-transition: 3s background-color;
   -o-transition: 3s background-color;
@@ -105,13 +109,13 @@ a:active {
 }
 
 .navigation-list__item:hover {
-  color: #4a235a;
+  color: #940591;
   font-weight: bold;
   background-color: #F9E79F;
 }
 
 .navigation-list__item--active {
-  color: #4a235a;
+  color: #940591;
   font-weight: bold;
   font-size: 25px;
   background-color: #F9E79F;
@@ -123,7 +127,7 @@ a:active {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #4a235a;
+  background-color: #940591;
   color: white !important;
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
@@ -131,6 +135,9 @@ a:active {
   border-radius: 3px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  -webkit-box-shadow: -2px -3px 101px -16px rgba(0,0,0,0.35) inset;
+          box-shadow: -2px -3px 101px -16px rgba(0,0,0,0.35) inset;
   -webkit-transition-duration: 3s;
        -o-transition-duration: 3s;
           transition-duration: 3s;
@@ -138,6 +145,8 @@ a:active {
   -o-transition-property: opacity, background-color;
   transition-property: opacity, background-color;
   font-size: 15px;
+  margin: 0;
+  left: 50%;
 }
 
 .button:hover,
@@ -146,13 +155,21 @@ a:active {
   cursor: pointer;
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
-  font-size: 15px;
   background-color: #e0b354;
-  padding: 10px;
   border-radius: 3px;
+  padding: 10px;
 }
 
-
+.message-form {
+  display: block;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  -webkit-box-shadow: -2px -3px 120px -45px rgba(0,0,0,0.35);
+          box-shadow: -2px -3px 120px -45px rgba(0,0,0,0.35);
+}
 
 .profile__portrait {
   float: left;
@@ -175,6 +192,11 @@ a:active {
           flex-direction: column;
   text-align: center;
   padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.media_link {
+ text-decoration: none !important;
 }
 
 
@@ -182,7 +204,12 @@ a:active {
   display: block;
   max-width: 700px;
   margin: 0 auto;
-  text-align: center;
+  text-align: justify;
+  padding-top: 60px;
+}
+
+.work_main {
+  max-width: 900px;
 }
 
 .about_list {
@@ -196,7 +223,7 @@ a:active {
 
 .web {
   color: #F9E79F;
-  background-color: black;
+  background-color: #940591;
 }
 
 * {
@@ -374,25 +401,18 @@ h1 {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }   
- body {
-  padding: 5px;
-}
 h1 {
-  font-size: 50px;
-}
-}
+  font-size: 30px;
+}  
+}  
 
 @media all and (min-width: 500px) and (max-width: 750px){
   .grid {
     -ms-grid-columns: 1fr 10px 1fr;
     grid-template-columns: 1fr 1fr;
   }
-  body {
-    padding: 5px;
-  }
   h1 {
-    font-size: 50px;
+    font-size: 30px;
   }
-}
-
+}  
 
