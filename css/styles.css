@@ -162,18 +162,6 @@ a:active {
   border-radius: 50%;
 }
 
-.index-page-footer {
-  clear: both;
-  flex-direction: column;
-  text-align: center;
-  padding-bottom: 10px;
-  height: 70px;
-  line-height: 0;
-  bottom: 0;
-  position: absolute;
-  width: 100%;
-}
-
 .page-footer {
   clear: both;
   flex-direction: column;
@@ -183,6 +171,18 @@ a:active {
   line-height: 0;
   bottom: 0;
   width: 100%;
+}
+
+.index-page-footer {
+  clear: both;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 10px;
+  height: 70px;
+  line-height: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
 }
 
 .media_link {
@@ -229,20 +229,25 @@ a:active {
   box-sizing: border-box;
 }
 
+.meet_app_screenshot {
+width: 250px;
+height: auto
+}
+
 
 /* start grid fallback */
 .grid__item {
   display: inline-block;
-  width: 33%;
-  padding: 30px;
+  width: 50%;
+  padding: 10px;
 }
 /* end grid fallback */
 
 @supports (display: grid) {
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 350px 350px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px 500px;
     grid-gap: 20px;
   }
 
